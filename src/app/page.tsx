@@ -49,19 +49,16 @@ export default function Home() {
       <h1>Video Snipping Tool</h1>
       <div className={styles.grid}>
         <div>
-          <label>
-            Platform:
-            <label htmlFor='format'>Formats:</label>
-            <select
-              className={styles.input}
-              value={aspectRatio}
-              onChange={(e) => setAspectRatio(e.target.value)}
-            >
-              <option value='9:16'>Instagram Reels</option>
-              <option value='1:1'>Instagram Feed</option>
-              <option value='16:9'>YouTube Standard</option>
-            </select>
-          </label>
+          <label htmlFor='format'>Platform:</label>
+          <select
+            className={styles.input}
+            value={aspectRatio}
+            onChange={(e) => setAspectRatio(e.target.value)}
+          >
+            <option value='9:16'>Instagram Reels</option>
+            <option value='1:1'>Instagram Feed</option>
+            <option value='16:9'>YouTube Standard</option>
+          </select>
 
           <label>
             Start Time (seconds):
