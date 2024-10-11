@@ -15,7 +15,7 @@ const cloudinary: Cloudinary = new Cloudinary({
   },
 });
 
-const videoId: string = 'dog-video_tzvryx';
+const videoId: string = 'video-public-id';
 
 export default function Home() {
   const [startTime, setStartTime] = useState(0);
